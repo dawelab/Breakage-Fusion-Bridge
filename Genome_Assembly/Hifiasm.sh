@@ -9,6 +9,8 @@
 #SBATCH --output=hifiasm.%j.out
 #SBATCH --error=hifiasm.%j.err
 
+###Hap2 Maternal are form the c2 tester haplotype and what needs to be kept for scaffolding. 
+
 ml hifiasm/0.25.0
 hifiasm -o trio_integrated_asm -t 36 \
   -1 /scratch/kbb45638/c2_tester_assembly/yak/k31/pat.yak -2 /scratch/kbb45638/c2_tester_assembly/yak/k31/mat.yak \
