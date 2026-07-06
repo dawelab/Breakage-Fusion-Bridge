@@ -11,6 +11,7 @@
 #SBATCH --error=awk.%j.err
 
 #L or R added to indicate direction of telomere. Samples with R later have their modkit calls put in reverse order for plotting
+#Samples with L will go in a directory named Telo_Left and samples with R will go in a directory named Telo_Right
 
 #4a1 L
 awk -v START=178101388 '$4!="h" && ($1=="chr4_RagTag" || $1=="CM039153.1_RagTag") && $2>=START && $2<=(START+10000)' 4a1b1_methylation_NewGenome.bed > 4a1_telo_modkit.bed
