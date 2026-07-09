@@ -1,0 +1,3 @@
+This is a quick command that can be run on an interactive job. This was used to compare coverage of the ONT and HiFi 4b4 samples. 
+
+samtools depth -r chr4_RagTag:116023409-190000000 ###chr4_bam_file### | awk '{sum+=$3; cnt++} END {if (cnt > 0) print "Mean Coverage: " sum/cnt; else print "Mean Coverage: 0"}'
