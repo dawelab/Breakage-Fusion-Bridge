@@ -1,0 +1,6 @@
+pyGenomeTracks was installed in a conda environment
+The following code was run to generate each plot
+
+replace 4b# with the appropriate track file for that sample
+
+pyGenomeTracks --tracks tracks_4b#.ini --region chr4_RagTag:110000000-190000000 --out BFB_variant_landscape_region_4b#.pdf
