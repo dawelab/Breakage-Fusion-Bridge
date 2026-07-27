@@ -31,6 +31,8 @@ BLAST_OUT = "temp_blast_results.tsv"
 
 # Hardcoded data
 SV_DATA = [
+    ("4a1", "duplication", 114221395),
+    ("4a1", "duplication", 114993680),
     ("4b2", "telomere", 150412744),
     ("4b2", "foldback", 134947803),
     ("4a3.d6", "telomere", 171651351),
