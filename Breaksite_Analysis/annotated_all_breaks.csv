@@ -1,0 +1,103 @@
+chrom,pos,hit_gene,hit_te,category
+chr4_RagTag,177907827,False,False,Intergenic / Neither
+chr4_RagTag,176587120,False,False,Intergenic / Neither
+chr4_RagTag,179062389,False,False,Intergenic / Neither
+chr4_RagTag,179937222,False,False,Intergenic / Neither
+chr4_RagTag,127725524,True,False,Gene Only
+chr4_RagTag,137219587,False,False,Intergenic / Neither
+chr4_RagTag,159125809,False,False,Intergenic / Neither
+chr4_RagTag,147539132,False,False,Intergenic / Neither
+chr4_RagTag,148421343,False,False,Intergenic / Neither
+chr4_RagTag,118653997,False,False,Intergenic / Neither
+chr4_RagTag,126046221,False,False,Intergenic / Neither
+chr4_RagTag,136826362,False,False,Intergenic / Neither
+chr4_RagTag,175052261,False,True,TE Only
+chr4_RagTag,125894353,False,False,Intergenic / Neither
+chr4_RagTag,120030571,False,False,Intergenic / Neither
+chr4_RagTag,120863999,False,False,Intergenic / Neither
+chr4_RagTag,124067805,False,False,Intergenic / Neither
+chr4_RagTag,142383322,False,True,TE Only
+chr4_RagTag,174537400,False,True,TE Only
+chr4_RagTag,182013079,True,False,Gene Only
+chr4_RagTag,148420219,False,False,Intergenic / Neither
+chr4_RagTag,153267326,False,False,Intergenic / Neither
+chr4_RagTag,169107677,False,True,TE Only
+chr4_RagTag,185757731,False,False,Intergenic / Neither
+chr4_RagTag,189355316,False,False,Intergenic / Neither
+chr4_RagTag,185686682,False,False,Intergenic / Neither
+chr4_RagTag,189248419,False,False,Intergenic / Neither
+chr4_RagTag,163031836,False,False,Intergenic / Neither
+chr4_RagTag,163358234,True,False,Gene Only
+chr4_RagTag,186732065,False,False,Intergenic / Neither
+chr4_RagTag,187697260,False,True,TE Only
+chr4_RagTag,143733882,False,True,TE Only
+chr4_RagTag,144894700,False,False,Intergenic / Neither
+chr4_RagTag,185882035,False,False,Intergenic / Neither
+chr4_RagTag,189142200,False,False,Intergenic / Neither
+chr4_RagTag,140794112,False,False,Intergenic / Neither
+chr4_RagTag,149797114,False,True,TE Only
+chr4_RagTag,183699764,False,False,Intergenic / Neither
+chr4_RagTag,140850554,False,False,Intergenic / Neither
+chr4_RagTag,185486319,False,False,Intergenic / Neither
+chr4_RagTag,179692083,True,False,Gene Only
+chr4_RagTag,174282162,False,True,TE Only
+chr4_RagTag,161128401,False,True,TE Only
+chr4_RagTag,178051613,False,False,Intergenic / Neither
+chr4_RagTag,178733306,False,True,TE Only
+chr4_RagTag,181939519,False,True,TE Only
+chr4_RagTag,181960832,False,False,Intergenic / Neither
+chr4_RagTag,127736044,False,False,Intergenic / Neither
+chr4_RagTag,146167689,False,True,TE Only
+chr4_RagTag,159638459,False,False,Intergenic / Neither
+chr4_RagTag,155587596,False,False,Intergenic / Neither
+chr4_RagTag,148526575,False,True,TE Only
+chr4_RagTag,159613180,False,True,TE Only
+chr4_RagTag,158192845,False,False,Intergenic / Neither
+chr4_RagTag,145448209,False,False,Intergenic / Neither
+chr4_RagTag,180915156,False,False,Intergenic / Neither
+chr4_RagTag,125933380,False,False,Intergenic / Neither
+chr4_RagTag,144586530,False,False,Intergenic / Neither
+chr4_RagTag,140248560,False,False,Intergenic / Neither
+chr4_RagTag,155474480,False,False,Intergenic / Neither
+chr4_RagTag,147584205,False,False,Intergenic / Neither
+chr4_RagTag,179583327,False,False,Intergenic / Neither
+chr4_RagTag,176557373,False,False,Intergenic / Neither
+chr4_RagTag,148421331,False,False,Intergenic / Neither
+chr4_RagTag,168913434,False,False,Intergenic / Neither
+chr4_RagTag,169795427,False,False,Intergenic / Neither
+chr4_RagTag,185791278,False,False,Intergenic / Neither
+chr4_RagTag,189360671,False,False,Intergenic / Neither
+chr4_RagTag,188578346,False,False,Intergenic / Neither
+chr4_RagTag,189328827,False,False,Intergenic / Neither
+chr4_RagTag,163610726,True,False,Gene Only
+chr4_RagTag,185973392,False,False,Intergenic / Neither
+chr4_RagTag,188516184,False,False,Intergenic / Neither
+chr4_RagTag,189116901,False,False,Intergenic / Neither
+chr4_RagTag,144802294,False,False,Intergenic / Neither
+chr4_RagTag,177977026,False,False,Intergenic / Neither
+chr4_RagTag,186255037,False,False,Intergenic / Neither
+chr4_RagTag,189172823,False,False,Intergenic / Neither
+chr4_RagTag,153381546,False,False,Intergenic / Neither
+chr4_RagTag,153720187,False,False,Intergenic / Neither
+chr4_RagTag,185489351,False,False,Intergenic / Neither
+chr4_RagTag,153720790,False,False,Intergenic / Neither
+chr4_RagTag,185486320,False,False,Intergenic / Neither
+chr4_RagTag,180068297,False,True,TE Only
+chr4_RagTag,174647330,False,True,TE Only
+chr4_RagTag,163012530,False,True,TE Only
+chr4_RagTag,178101389,False,True,TE Only
+chr4_RagTag,161404502,False,False,Intergenic / Neither
+chr4_RagTag,151760101,False,True,TE Only
+chr4_RagTag,186529890,False,True,TE Only
+chr4_RagTag,116023409,False,True,TE Only
+chr4_RagTag,130346197,False,False,Intergenic / Neither
+chr4_RagTag,172716549,False,False,Intergenic / Neither
+chr4_RagTag,127343146,False,False,Intergenic / Neither
+chr4_RagTag,131357204,False,False,Intergenic / Neither
+chr4_RagTag,163371467,False,True,TE Only
+chr4_RagTag,174663704,False,False,Intergenic / Neither
+chr4_RagTag,174542727,False,False,Intergenic / Neither
+chr4_RagTag,178122315,False,False,Intergenic / Neither
+chr4_RagTag,125933390,False,False,Intergenic / Neither
+chr4_RagTag,136438699,True,True,Both (Gene & TE)
+chr4_RagTag,186426084,False,True,TE Only
