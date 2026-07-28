@@ -29,7 +29,7 @@ All raw reads used in this analysis can be found under Bioproject Accession Numb
 6)  Command_Line_Final.sh: Commands run directly on terminal to combined the new reference and ABS to create a diploid reference and remove unplaced contigs.\
 7)  mask_telo.py: This hard masks (replace with N) all telomere repeats. This was used on the diploid refernce for the telomere analysis.
 
-## Dorado Scripts {#dorado-scripts}
+## Dorado Scripts
 
 #### This directory contains all the code to process the raw pod5 and multiplexed files prior to analysis. The outputs from this are on the SRA.
 
