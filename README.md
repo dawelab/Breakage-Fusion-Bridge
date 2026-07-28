@@ -4,7 +4,7 @@ This repository contains all the code used in "Molecular consequences of chromos
 
 # Repositories
 
--   [Genome Assembly](#Genome%20Assembly)
+-   [Genome Assembly](#genome-assembly)
 -   [Dorado Scripts](#Dorado%20Scripts)
 -   [BFB Pipelines](#BFB%20Pipelines)
 -   [SV Plots](#SV%20Plots)
