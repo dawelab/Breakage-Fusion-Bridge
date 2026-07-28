@@ -97,6 +97,6 @@ Metaplot_position_based.py: Plots neotelomere methylation. This script requires 
 3.  piechart_combined.py and piechart_combined_ABS.py: These create the piechart seen in Figure 4 A. The only difference is that piechart_combined.py does not include ABS as a category.
 4.  combined_ABS_categoy.py: This creates figure 4B and 4C. These figures show the distribuiton of neoteolomeres and their orientation and plot the location of breaks along with genomic context.
 
-## Coverage Calculations {#coverage-calculations}
+## Coverage Calculations (#coverage-calculations)
 
 These scripts were run to calculate coverage. the .sh scripts (bam_cover_loop.sh and fastq_coverage.sh) were used to calculate coverage for table S3. 4b4_Coverage were run from command line to calculate coverge of the 4b(4) neochromosome to compare the ONT and HiFi data.
