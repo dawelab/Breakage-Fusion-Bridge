@@ -1,10 +1,10 @@
 # **Molecular consequences of chromosome and chromatid type breakage fusion bridge cycles in maize**
 
-This repository contains all the code used in "Molecular consequences of chromosome and chromatid type breakage fusion bridge cycles in maize". We utilized an inducible centromere system in Maize to generate 11 chromosome BFB derived neochromosomes and 11 chromatid BFB derived neochromosomes. Nanopore long-read sequencing was used to study the structural variants and neotelomeres formed. Chromatid BFB strucutral variants were limited to foldback duplications (also known as foldback inversions and inverted duplications). Chromosome type BFB was found to produce tandem duplications and internal deletions as well as complex rearrangements resembling chromothripsis. Neotelomere formation sites largely mirrored neoteolomere sites in humans and wheat where formation typically occurs over regions with homology to the telomerase RNA template. These addition sites occasionally contained imperfect telomere motifs at addition sites. Several addition sites showed an unreported pattern where new sequence was inserted between the telomere motif and the DNA break site. The inserted sequence was found to contain reverse homology just upstream of the addition site.
+This repository contains all the code used in "Molecular consequences of chromosome and chromatid type breakage fusion bridge cycles in maize". We utilized an inducible centromere system in Maize to generate 11 chromosome BFB derived neochromosomes and 11 chromatid BFB derived neochromosomes. Nanopore long-read sequencing was used to study the structural variants and neotelomeres formed. Chromatid BFB structural variants were limited to foldback duplications (also known as foldback inversions and inverted duplications). Chromosome type BFB was found to produce tandem duplications and internal deletions as well as complex rearrangements resembling chromothripsis. Neotelomere formation sites largely mirrored neotelomere sites in humans and wheat where formation typically occurs over regions with homology to the telomerase RNA template. These addition sites occasionally contained imperfect telomere motifs at addition sites. Several addition sites showed an unreported pattern where new sequence was inserted between the telomere motif and the DNA break site. The inserted sequence was found to contain reverse homology just upstream of the addition site.
 
 All raw reads used in this analysis can be found under Bioproject Accession Number PRJNA1493139
 
-# Repositories
+# Directories
 
 -   [Genome Assembly](#genome-assembly)
 -   [Dorado Scripts](#dorado-scripts)
@@ -18,16 +18,16 @@ All raw reads used in this analysis can be found under Bioproject Accession Numb
 
 #### This directory section contains all the code needed to generate the c2 assembly used in the paper.
 
-1)  yak.sh: Count K-mers from the illumina reads for triobinning
-2)  15kb_Filter.sh: Filter Nanopore reads to remove reads under 15kb
-3)  ONT_cat.sh: Combine the three filtered fastq.gz files into a single fastq.gz
-4)  Hifiasm.sh: Assembly step. HiFi reads from 4b(4), ONT reads from step 3, and the .yak files from step 1 are used to generate a triobinned assembly. .gfa files from each parent are converted to fasta.
-5)  Ragtag.sh: Scaffold the contigs from Hifiasm using Mo17 genome.
+1.  yak.sh: Count K-mers from the illumina reads for triobinning
+2.  15kb_Filter.sh: Filter Nanopore reads to remove reads under 15kb
+3.  ONT_cat.sh: Combine the three filtered fastq.gz files into a single fastq.gz
+4.  Hifiasm.sh: Assembly step. HiFi reads from 4b(4), ONT reads from step 3, and the .yak files from step 1 are used to generate a triobinned assembly. .gfa files from each parent are converted to fasta.
+5.  Ragtag.sh: Scaffold the contigs from Hifiasm using Mo17 genome.
 
 ###### Note: If attempting this in the future and a new W22 genome is released scaffolding on that will likely work better because c2 is derived from W22. When this work was done, the available W22 reference was from 2017 and contained 68,134 contigs. Doing this will change coordinates of breakpoints later!
 
-6)  Command_Line_Final.sh: Commands run directly on terminal to combined the new reference and ABS to create a diploid reference and remove unplaced contigs.\
-7)  mask_telo.py: This hard masks (replace with N) all telomere repeats. This was used on the diploid refernce for the telomere analysis.
+6.  Command_Line_Final.sh: Commands run directly on terminal to combined the new reference and ABS to create a diploid reference and remove unplaced contigs.\
+7.  mask_telo.py: This hard masks (replace with N) all telomere repeats. This was used on the diploid refernece for the telomere analysis.
 
 ## Dorado Scripts
 
@@ -35,12 +35,12 @@ All raw reads used in this analysis can be found under Bioproject Accession Numb
 
 ###### Note: These scripts use dorado version 1.1.1 in a singularity container. The only reason a singularity container was used is because at the time this analysis was done Dorado 1.1.1 was the newest version on our HPC and it was only installed in a singularity container.
 
-1)  dorado_basecall.sh: Basecalls .pod5 files.
-2)  dorado_demux.sh: Demultiplexes the libraries generated with SQK-NBD114.24
+1.  dorado_basecall.sh: Basecalls .pod5 files.
+2.  dorado_demux.sh: Demultiplexes the libraries generated with SQK-NBD114.24
 
 ## BFB Pipelines
 
-#### This directory contains the scripts used to do alignment, initial neoteolomere detection, and variant calling. There are three scripts here, but all do nearly the same thing. The only difference is in Step 1. This is the most computationally intense step outside of basecalling and should be done an an HPC. 
+#### This directory contains the scripts used to do alignment, initial neotelomere detection, and variant calling. There are three scripts here, but all do nearly the same thing. The only difference is in Step 1. This is the most computationally intense step outside of basecalling and should be done an an HPC. 
 
 Running these scripts in a directory with the name for your sample will result in the easiest analysis. The initial command uses a \* wildcard to just grab the unaligned .bam file (or .fq), so be sure there are not other files in the directory.
 
@@ -54,7 +54,7 @@ This step extracts reads with a minimum of 4 intact telomere 7-mers for initial 
 
 ### Step 3:
 
-This step creates filtered alignments that remove multimapping reads and limit alignment to chromosome 4. A SM tag is also added here to ensure Freebayes can handle the files in the next step. This file (chr4_reads\_\${PREFIX}.bam) is used for all the subsequent analyses. Adaptive sampling primarily enriched chromosome 4 and all SVs should be on this chromosome.
+This step creates filtered alignments that remove multimapping reads and limit alignment to chromosome 4. A SM tag is also added here to ensure Freebayes can handle the files in the next step. This file `chr4_reads\_\${PREFIX}.bam` is used for all the subsequent analyses. Adaptive sampling primarily enriched chromosome 4 and all SVs should be on this chromosome.
 
 ### Step 4:
 
@@ -95,8 +95,8 @@ Metaplot_position_based.py: Plots neotelomere methylation. This script requires 
 1.  w22_c2_blast_loop.sh: Finds c2 breaksite locations in the W22 genome. The regions 10 kb upstream and downstream the breaksite is extracted and blasted to the W22 genome. The original position is then converted to a coordinate in the W22 genome
 2.  breaksite_enrichment_ABS.py and w22_feature_annotate.py: Creates a file that contains information on breaksite coordinates and genomic feature. The outputs from these files are also included in the Breaksite_Analysis directory because these scripts require the .gff3 files for W22 and ABS.
 3.  piechart_combined.py and piechart_combined_ABS.py: These create the piechart seen in Figure 4 A. The only difference is that piechart_combined.py does not include ABS as a category.
-4.  combined_ABS_categoy.py: This creates figure 4B and 4C. These figures show the distribuiton of neoteolomeres and their orientation and plot the location of breaks along with genomic context.
+4.  combined_ABS_categoy.py: This creates figure 4B and 4C. These figures show the distribution of neoteolomeres and their orientation and plot the location of breaks along with genomic context.
 
 ## Coverage Calculations
 
-These scripts were run to calculate coverage. the .sh scripts (bam_cover_loop.sh and fastq_coverage.sh) were used to calculate coverage for table S3. 4b4_Coverage were run from command line to calculate coverge of the 4b(4) neochromosome to compare the ONT and HiFi data.
+These scripts were run to calculate coverage. the .sh scripts (bam_cover_loop.sh and fastq_coverage.sh) were used to calculate coverage for table S3. 4b4_Coverage were run from command line to calculate coverage of the 4b(4) neochromosome to compare the ONT and HiFi data.
