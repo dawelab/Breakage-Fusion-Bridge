@@ -5,12 +5,12 @@ This repository contains all the code used in "Molecular consequences of chromos
 # Repositories
 
 -   [Genome Assembly](#genome-assembly)
--   [Dorado Scripts](#Dorado%20Scripts)
--   [BFB Pipelines](#BFB%20Pipelines)
--   [SV Plots](#SV%20Plots)
--   [Telomere Analysis](#Telomere%20Analysis)
--   [Breaksite Analysis](#Breaksite%20Analysis)
--   [Coverage Calculations](#Coverage%20Calculations)
+-   [Dorado Scripts](#dorado-scripts)
+-   [BFB Pipelines](#bfb-pipelines)
+-   [SV Plots](#sv-plots)
+-   [Telomere Analysis](#telomere-analysis)
+-   [Breaksite Analysis](#breaksite-analysis)
+-   [Coverage Calculations](#coverage-calculations)
 
 ## Genome Assembly
 
