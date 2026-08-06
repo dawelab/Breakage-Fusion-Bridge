@@ -1,6 +1,6 @@
 # **Molecular consequences of chromosome and chromatid type breakage fusion bridge cycles in maize**
 
-This repository contains all the code used in "Molecular consequences of chromosome and chromatid type breakage fusion bridge cycles in maize". We utilized an inducible centromere system in Maize to generate 11 chromosome BFB derived neochromosomes and 11 chromatid BFB derived neochromosomes. Nanopore long-read sequencing was used to study the structural variants and neotelomeres formed. Chromatid BFB structural variants were limited to foldback duplications (also known as foldback inversions and inverted duplications). Chromosome type BFB was found to produce tandem duplications and internal deletions as well as complex rearrangements resembling chromothripsis. Neotelomere formation sites largely mirrored neotelomere sites in humans and wheat where formation typically occurs over regions with homology to the telomerase RNA template. These addition sites occasionally contained imperfect telomere motifs at addition sites. Several addition sites showed an unreported pattern where new sequence was inserted between the telomere motif and the DNA break site. The inserted sequence was found to contain reverse homology just upstream of the addition site.
+This repository contains all the code used in "Molecular consequences of chromosome and chromatid type breakage fusion bridge cycles in maize". We utilized an inducible centromere system in maize to generate 11 chromosome BFB derived neochromosomes and 11 chromatid BFB derived neochromosomes. Nanopore long-read sequencing was used to study the structural variants and neotelomeres formed. Chromatid BFB structural variants were limited to foldback duplications (also known as foldback inversions and inverted duplications). Chromosome type BFB was found to produce tandem duplications and internal deletions as well as complex rearrangements resembling chromothripsis. Neotelomere formation sites largely mirrored neotelomere sites in humans and wheat where formation typically occurs over regions with homology to the telomerase RNA template. These addition sites occasionally contained imperfect telomere motifs at addition sites. Several addition sites showed an unreported pattern where new sequence was inserted between the telomere motif and the DNA break site. The inserted sequence was found to contain reverse homology just upstream of the addition site.
 
 All raw reads used in this analysis can be found under Bioproject Accession Number PRJNA1493139
 
@@ -27,7 +27,7 @@ All raw reads used in this analysis can be found under Bioproject Accession Numb
 ###### Note: If attempting this in the future and a new W22 genome is released scaffolding on that will likely work better because c2 is derived from W22. When this work was done, the available W22 reference was from 2017 and contained 68,134 contigs. Doing this will change coordinates of breakpoints later!
 
 6.  Command_Line_Final.sh: Commands run directly on terminal to combined the new reference and ABS to create a diploid reference and remove unplaced contigs.\
-7.  mask_telo.py: This hard masks (replace with N) all telomere repeats. This was used on the diploid refernece for the telomere analysis.
+7.  mask_telo.py: This hard masks (replace with N) all telomere repeats. This was used on the diploid reference for the telomere analysis.
 
 ## Dorado Scripts
 
@@ -70,7 +70,7 @@ This creates a new alignment that has foldback candidates. Nanopore R10.4 chemis
 
 ### Step 7:
 
-This step runs Sniffles and Severus on the chromosome 4 and SNP filtered chromosome 4 alignments. Manual variant calling with by coverage analysis and split read identification in IGV is still incredibly useful. Calling large and nested SVs in a heterogeneous and repetative genome like Maize is quite challenging!
+This step runs Sniffles and Severus on the chromosome 4 and SNP filtered chromosome 4 alignments. Manual variant calling with by coverage analysis and split read identification in IGV is still incredibly useful. Calling large and nested SVs in a heterogeneous and repetitive genome like maize is quite challenging!
 
 ## SV Plots
 
